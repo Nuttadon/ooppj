@@ -36,7 +36,7 @@ public class ExprParser implements Parser{
     }
     private void WhileStatement() throws SyntaxError, LexicalError, EvalError, IOException {
         if (tkz.peek("while")){
-            wLoop = true;
+            wLoop = true;//
             tkz.consume("while");
             tkz.consume("(");
             Expr t = Expression();
